@@ -9,7 +9,7 @@ plugins {
 subprojects {
     tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).configureEach {
         kotlinOptions {
-            if (project.findProperty("myApp.enableComposeCompilerReports") == "true") {
+            if (project.findProperty("myapp.enableComposeCompilerReports") == "true") {
                 freeCompilerArgs += [
                         "-P",
                         "plugin:androidx.compose.compiler.plugins.kotlin:reportsDestination=" +
